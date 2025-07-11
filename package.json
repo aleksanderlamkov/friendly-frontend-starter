@@ -1,0 +1,60 @@
+{
+  "name": "friendly-frontend-starter",
+  "version": "1.0.0",
+  "private": true,
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/AleksanderLamkov/friendly-frontend-starter.git"
+  },
+  "type": "module",
+  "scripts": {
+    "start": "minista",
+    "build": "minista build",
+    "preview": "minista preview",
+    "lint:js": "eslint . --ext .js,.jsx",
+    "lint:js:fix": "eslint . --ext .js,.jsx --fix",
+    "lint:css": "stylelint \"**/*.{css,scss,pcss}\"",
+    "lint:css:fix": "stylelint \"**/*.{css,scss,pcss}\" --fix",
+    "format": "prettier . --check",
+    "format:fix": "prettier . --write",
+    "lint": "run-s lint:js lint:css format",
+    "lint:fix": "run-s lint:js:fix lint:css:fix format:fix"
+  },
+  "devDependencies": {
+    "@babel/eslint-parser": "7.28.0",
+    "@babel/plugin-syntax-jsx": "7.27.1",
+    "@eslint/js": "9.30.1",
+    "eslint": "9.30.1",
+    "eslint-config-prettier": "10.1.5",
+    "eslint-plugin-jsx-a11y": "6.10.2",
+    "eslint-plugin-prettier": "5.5.1",
+    "eslint-plugin-react": "7.37.5",
+    "eslint-plugin-react-hooks": "5.2.0",
+    "friendly-frontend-lint-config": "1.0.1",
+    "globals": "16.3.0",
+    "minista": "3.1.12",
+    "npm-run-all": "4.1.5",
+    "postcss-preset-env": "10.2.4",
+    "postcss-pxtorem": "6.1.0",
+    "prettier": "3.6.2",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "sass": "1.89.2",
+    "stylelint": "16.21.0",
+    "stylelint-config-standard-scss": "15.0.1",
+    "stylelint-order": "7.0.0",
+    "stylelint-scss": "6.12.1",
+    "stylelint-selector-bem-pattern": "4.0.1"
+  },
+  "dependencies": {
+    "@a1rth/css-normalize": "1.2.1",
+    "clsx": "2.1.1",
+    "imask": "7.6.1"
+  },
+  "browserslist": [
+    ">0.5%",
+    "last 2 versions",
+    "not dead"
+  ]
+}

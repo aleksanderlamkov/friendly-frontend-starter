@@ -1,0 +1,53 @@
+.field {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: fluid-to-laptop(16, 12);
+
+  &__label {
+    font-size: fluid-to-laptop(18, 16);
+    font-weight: 700;
+    color: var(--color-white);
+  }
+
+  &__required-star {
+    color: var(--color-accent);
+  }
+
+  &__control {
+    width: 100%;
+    max-width: 300px;
+    height: fluid-to-laptop(67, 53);
+    padding-inline: fluid-to-laptop(20, 16);
+    color: var(--color-white);
+    background-color: var(--color-black);
+    border: var(--border-width-m) solid var(--color-white);
+    border-radius: var(--border-radius);
+
+    @include laptop {
+      border-radius: var(--border-radius-xs);
+    }
+
+    @include hover {
+      border-color: var(--color-white);
+    }
+
+    &:user-invalid {
+      border-color: var(--color-accent);
+    }
+
+    &:disabled {
+      @include disabled;
+    }
+
+    &::placeholder {
+      color: var(--color-gray);
+    }
+  }
+
+  textarea.field__control {
+    min-height: fluid(163, 109);
+    padding-block: fluid-to-laptop(20, 16);
+    resize: vertical;
+  }
+}

@@ -1,0 +1,32 @@
+:root {
+  --color-white: #ffffff;
+  --color-black: #000000;
+
+  --color-accent: #e50000;
+
+  --color-gray: #808080;
+
+  --border: var(--border-width-m) solid var(--color-accent);
+
+  --border-width-xl: 6px;
+  --border-width-l: 4px;
+  --border-width-m: 3px;
+  --border-width-s: 1px;
+
+  --border-radius-l: 12px;
+  --border-radius-m: 10px;
+  --border-radius: 8px;
+  --border-radius-xs: 6px;
+  --border-radius-xxs: 5px;
+  --border-radius-xxxs: 4px;
+
+  --font-family-base: 'Manrope';
+
+  --container-width: #{fluid-to-laptop(
+      $container-desktop-width,
+      $container-laptop-width
+    )};
+  --container-padding-x: 16px;
+
+  --transition-duration: 0.2s;
+}
