@@ -1,4 +1,4 @@
-# 🧱 Friendly Frontend Starter (TypeScript)
+# 🧱 Friendly Frontend Starter
 
 Стартер для современных фронтенд-проектов на базе [Minista](https://minista.qranoko.jp/) с поддержкой JSX (без React), SCSS, линтинга и автоформатирования.
 
