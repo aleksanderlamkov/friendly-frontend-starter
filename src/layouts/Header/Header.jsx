@@ -47,11 +47,11 @@ export default (props) => {
           <div className="header__actions">
             <Button className="header__button">
               <span>Search</span>
-              <Icon name="search " />
+              <Icon name="search" />
             </Button>
             <Button className="header__button">
               <span>Notifications</span>
-              <Icon name="notification " />
+              <Icon name="notification" />
             </Button>
           </div>
         </dialog>
