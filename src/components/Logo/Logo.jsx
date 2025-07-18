@@ -1,7 +1,5 @@
 import './Logo.scss'
-import { Image } from 'minista'
 import clsx from 'clsx'
-import logoImgSrc from '@/assets/images/logo.svg'
 
 export default (props) => {
   const { className, loading = 'lazy' } = props
@@ -15,7 +13,14 @@ export default (props) => {
       title={title}
       aria-label={title}
     >
-      <Image className="logo__image" src={logoImgSrc} loading={loading} />
+      <img
+        className="logo__image"
+        src="/images/logo.svg"
+        alt=""
+        width={200}
+        height={68}
+        loading={loading}
+      />
     </a>
   )
 }
