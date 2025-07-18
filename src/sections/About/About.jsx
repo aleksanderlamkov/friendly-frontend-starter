@@ -1,5 +1,6 @@
 import './About.scss'
 import Section from '@/layouts/Section'
+import { Image } from 'minista'
 
 export default () => {
   return (
@@ -8,7 +9,8 @@ export default () => {
       titleId="about-title"
       description="About section description"
     >
-      About section content
+      <p>About section content</p>
+      <Image src="/src/assets/images/cat.jpg" />
     </Section>
   )
 }
